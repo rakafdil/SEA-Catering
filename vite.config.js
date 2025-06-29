@@ -14,5 +14,10 @@ export default defineConfig({
     ],
     server: {
         cors: true,
+        host: 'seacatering.test', // Ensures it's accessible from the correct domain
+        port: 5173, // Default Vite port, but you can change it if needed
+        hmr: {
+            host: 'seacatering.test', // Ensures HMR connects properly
+        },
     },
 });
